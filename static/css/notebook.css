@@ -144,7 +144,7 @@ body {
 
 .cell.selected {
     border-color: var(--cloudvbox-primary) !important;
-    box-shadow: 0 0 0 2px rgba(85, 252, 255, 0.2) !important;
+    box-shadow: 0 0 0 2px rgba(var(--cloudvbox-primary-rgb), 0.2) !important;
 }
 
 /* Células de código */
@@ -172,13 +172,13 @@ body {
 }
 
 .CodeMirror-selected {
-    background-color: rgba(85, 252, 255, 0.2) !important;
+    background-color: rgba(var(--cloudvbox-primary-rgb), 0.2) !important;
 }
 
 .CodeMirror-line::selection,
 .CodeMirror-line > span::selection,
 .CodeMirror-line > span > span::selection {
-    background-color: rgba(85, 252, 255, 0.3) !important;
+    background-color: rgba(var(--cloudvbox-primary-rgb), 0.3) !important;
 }
 
 /* Números de linha */
@@ -265,7 +265,7 @@ body {
 
 .text_cell_render a:hover {
     text-decoration: underline !important;
-    color: rgba(85, 252, 255, 0.8) !important;
+    color: rgba(var(--cloudvbox-primary-rgb), 0.8) !important;
 }
 
 .text_cell_render code {
@@ -386,9 +386,9 @@ body {
 
 /* === ANIMAÇÕES === */
 @keyframes cloudvbox-glow {
-    0% { box-shadow: 0 0 5px rgba(85, 252, 255, 0.3); }
-    50% { box-shadow: 0 0 20px rgba(85, 252, 255, 0.5); }
-    100% { box-shadow: 0 0 5px rgba(85, 252, 255, 0.3); }
+    0% { box-shadow: 0 0 5px rgba(var(--cloudvbox-primary-rgb), 0.3); }
+    50% { box-shadow: 0 0 20px rgba(var(--cloudvbox-primary-rgb), 0.5); }
+    100% { box-shadow: 0 0 5px rgba(var(--cloudvbox-primary-rgb), 0.3); }
 }
 
 .cell.selected {

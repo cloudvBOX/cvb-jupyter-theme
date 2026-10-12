@@ -34,7 +34,7 @@
             
             // Adicionar efeito hover
             logo.addEventListener('mouseenter', function() {
-                this.style.filter = 'brightness(1.2) drop-shadow(0 0 8px rgba(85, 252, 255, 0.3))';
+                this.style.filter = 'brightness(1.2) drop-shadow(0 0 8px rgba(var(--cloudvbox-primary-rgb, 63, 209, 185), 0.3))';
             });
             
             logo.addEventListener('mouseleave', function() {
@@ -62,7 +62,7 @@
             bottom: 20px;
             right: 20px;
             background-color: var(--cloudvbox-bg-card, #1f2937);
-            color: var(--cloudvbox-primary, #55FCFF);
+            color: var(--cloudvbox-primary, #3FD1B9);
             padding: 0.5rem 1rem;
             border-radius: 1rem;
             font-size: 0.75rem;
@@ -110,7 +110,7 @@
             /* Destacar links */
             .text_cell_render a,
             .jp-MarkdownOutput a {
-                color: var(--cloudvbox-primary, #55FCFF) !important;
+                color: var(--cloudvbox-primary, #3FD1B9) !important;
                 text-decoration: none !important;
                 border-bottom: 1px solid transparent !important;
                 transition: all 0.2s ease-in-out !important;
@@ -118,8 +118,8 @@
             
             .text_cell_render a:hover,
             .jp-MarkdownOutput a:hover {
-                border-bottom-color: var(--cloudvbox-primary, #55FCFF) !important;
-                text-shadow: 0 0 8px rgba(85, 252, 255, 0.3) !important;
+                border-bottom-color: var(--cloudvbox-primary, #3FD1B9) !important;
+                text-shadow: 0 0 8px rgba(var(--cloudvbox-primary-rgb, 63, 209, 185), 0.3) !important;
             }
             
             /* Melhorar tabelas */
@@ -134,7 +134,7 @@
             .text_cell_render th,
             .jp-MarkdownOutput th {
                 background-color: var(--cloudvbox-bg-secondary, #0f172a) !important;
-                color: var(--cloudvbox-primary, #55FCFF) !important;
+                color: var(--cloudvbox-primary, #3FD1B9) !important;
                 font-weight: 600 !important;
                 padding: 0.75rem !important;
                 border-bottom: 1px solid var(--cloudvbox-border-primary, #374151) !important;
@@ -169,7 +169,7 @@
                     position: fixed;
                     top: 20px;
                     right: 20px;
-                    background-color: var(--cloudvbox-primary, #55FCFF);
+                    background-color: var(--cloudvbox-primary, #3FD1B9);
                     color: var(--cloudvbox-bg-primary, #012837);
                     padding: 1rem;
                     border-radius: 0.5rem;
@@ -207,8 +207,8 @@
             }
             
             @keyframes glow {
-                0%, 100% { box-shadow: 0 0 5px rgba(85, 252, 255, 0.3); }
-                50% { box-shadow: 0 0 20px rgba(85, 252, 255, 0.6); }
+                0%, 100% { box-shadow: 0 0 5px rgba(var(--cloudvbox-primary-rgb, 63, 209, 185), 0.3); }
+                50% { box-shadow: 0 0 20px rgba(var(--cloudvbox-primary-rgb, 63, 209, 185), 0.6); }
             }
             
             /* Aplicar animações */

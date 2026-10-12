@@ -55,7 +55,7 @@
         }
         
         .cloudvbox-loading-text {
-            color: #55FCFF;
+            color: var(--cloudvbox-primary);
             font-size: 1.2rem;
             font-weight: 600;
             margin-bottom: 1rem;
@@ -64,8 +64,8 @@
         .cloudvbox-loading-spinner {
             width: 40px;
             height: 40px;
-            border: 3px solid rgba(85, 252, 255, 0.3);
-            border-top: 3px solid #55FCFF;
+            border: 3px solid rgba(var(--cloudvbox-primary-rgb), 0.3);
+            border-top: 3px solid var(--cloudvbox-primary);
             border-radius: 50%;
             animation: spin 1s linear infinite;
         }
@@ -133,7 +133,9 @@
         });
         
         // Adicionar informações do tema no console
-        console.log('%c🚀 cloudvBOX Dark Theme', 'color: #55FCFF; font-size: 16px; font-weight: bold;');
+        // O console não resolve var(): lê o token já aplicado pelo custom.css
+        const cloudvboxPrimary = getComputedStyle(document.documentElement).getPropertyValue('--cloudvbox-primary').trim();
+        console.log('%c🚀 cloudvBOX Dark Theme', 'color: ' + cloudvboxPrimary + '; font-size: 16px; font-weight: bold;');
         console.log('%cTema profissional para Jupyter Notebook', 'color: #ffffff; font-size: 12px;');
         console.log('%cVersão: 1.0.0', 'color: #d1d5db; font-size: 10px;');
     </script>

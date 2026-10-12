@@ -1,0 +1,16 @@
+name: cockpit-v2
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  paleta:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Gate da paleta Cockpit v2
+        run: sh scripts/check-cockpit-v2.sh

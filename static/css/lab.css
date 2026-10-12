@@ -15,9 +15,9 @@
     --jp-layout-color4: var(--cloudvbox-border-primary);
     
     --jp-brand-color0: var(--cloudvbox-primary);
-    --jp-brand-color1: rgba(85, 252, 255, 0.8);
-    --jp-brand-color2: rgba(85, 252, 255, 0.6);
-    --jp-brand-color3: rgba(85, 252, 255, 0.4);
+    --jp-brand-color1: rgba(var(--cloudvbox-primary-rgb), 0.8);
+    --jp-brand-color2: rgba(var(--cloudvbox-primary-rgb), 0.6);
+    --jp-brand-color3: rgba(var(--cloudvbox-primary-rgb), 0.4);
     
     --jp-ui-font-color0: var(--cloudvbox-text-primary);
     --jp-ui-font-color1: var(--cloudvbox-text-secondary);
@@ -35,7 +35,7 @@
     --jp-cell-editor-active-background: var(--cloudvbox-bg-secondary);
     --jp-cell-editor-active-border-color: var(--cloudvbox-primary);
     
-    --jp-notebook-multiselected-color: rgba(85, 252, 255, 0.2);
+    --jp-notebook-multiselected-color: rgba(var(--cloudvbox-primary-rgb), 0.2);
     
     --jp-rendermime-error-background: rgba(255, 99, 71, 0.1);
     --jp-rendermime-table-row-background: var(--cloudvbox-bg-secondary);
@@ -186,7 +186,7 @@
 }
 
 .jp-DirListing-item.jp-mod-selected {
-    background-color: rgba(85, 252, 255, 0.2) !important;
+    background-color: rgba(var(--cloudvbox-primary-rgb), 0.2) !important;
     color: var(--cloudvbox-primary) !important;
 }
 
@@ -239,12 +239,12 @@
 
 .jp-Cell.jp-mod-selected {
     border-color: var(--cloudvbox-primary) !important;
-    box-shadow: 0 0 0 2px rgba(85, 252, 255, 0.2) !important;
+    box-shadow: 0 0 0 2px rgba(var(--cloudvbox-primary-rgb), 0.2) !important;
 }
 
 .jp-Cell.jp-mod-active {
     border-color: var(--cloudvbox-primary) !important;
-    box-shadow: 0 0 0 3px rgba(85, 252, 255, 0.3) !important;
+    box-shadow: 0 0 0 3px rgba(var(--cloudvbox-primary-rgb), 0.3) !important;
 }
 
 /* === CÉLULAS DE CÓDIGO === */
@@ -300,7 +300,7 @@
 
 .jp-MarkdownOutput a:hover {
     text-decoration: underline !important;
-    color: rgba(85, 252, 255, 0.8) !important;
+    color: rgba(var(--cloudvbox-primary-rgb), 0.8) !important;
 }
 
 .jp-MarkdownOutput code {

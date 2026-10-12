@@ -18,7 +18,7 @@ O **cloudvBOX Dark Theme** é um tema profissional escuro desenvolvido especific
 ### ✨ Características Principais
 
 - **🌙 Design Escuro Profissional**: Fundo escuro (#012837) que reduz o cansaço visual
-- **🎯 Cor de Destaque Única**: Ciano vibrante (#55FCFF) da identidade cloudvBOX
+- **🎯 Cor de Destaque Única**: teal accent-ink (#3FD1B9) da paleta Cockpit v2 da cloudvBOX
 - **🖼️ Logo Integrado**: Logo cloudvBOX elegantemente posicionado no header
 - **📱 Design Responsivo**: Funciona perfeitamente em desktop e mobile
 - **🔧 Syntax Highlighting Otimizado**: Cores cuidadosamente selecionadas para melhor legibilidade
@@ -30,7 +30,7 @@ O **cloudvBOX Dark Theme** é um tema profissional escuro desenvolvido especific
 | Elemento | Cor | Hex |
 |----------|-----|-----|
 | Fundo Principal | Azul Escuro | `#012837` |
-| Cor de Destaque | Ciano | `#55FCFF` |
+| Cor de Destaque | Teal (accent-ink v2) | `#3FD1B9` |
 | Texto Principal | Branco | `#ffffff` |
 | Texto Secundário | Cinza Claro | `#d1d5db` |
 | Botões Primários | Azul | `#3b82f6` |
@@ -38,6 +38,14 @@ O **cloudvBOX Dark Theme** é um tema profissional escuro desenvolvido especific
 
 
 
+
+## 🧭 Cockpit v2
+
+A cor de interação deste tema segue a paleta do Cockpit v2, adotada em todo o design system da
+plataforma: o teal **accent-ink** `#3FD1B9` (dark; `#0E6E66` no light) substitui o ciano v1
+`#55FCFF`. O gate `sh scripts/check-cockpit-v2.sh` (também no CI) barra a volta das cores v1 e
+literais do accent-ink fora dos arquivos de token. Detalhes, o que ainda está aberto e links do
+handoff em [`docs/cockpit-v2.md`](docs/cockpit-v2.md).
 
 ## 🚀 Instalação
 
@@ -162,7 +170,8 @@ Você pode personalizar as cores do tema editando o arquivo CSS:
 ```css
 :root {
     /* Personalizar cor principal */
-    --cloudvbox-primary: #55FCFF;
+    --cloudvbox-primary: #3FD1B9;
+    --cloudvbox-primary-rgb: 63, 209, 185;
     
     /* Personalizar fundo */
     --cloudvbox-dark-bg: #012837;
@@ -426,7 +435,7 @@ The **cloudvBOX Dark Theme** is a professional dark theme developed specifically
 ### ✨ Key Features
 
 - **🌙 Professional Dark Design**: Dark background (#012837) that reduces eye strain
-- **🎯 Unique Accent Color**: Vibrant cyan (#55FCFF) from the cloudvBOX identity
+- **🎯 Unique Accent Color**: accent-ink teal (#3FD1B9) from the cloudvBOX Cockpit v2 palette
 - **🖼️ Integrated Logo**: cloudvBOX logo elegantly positioned in the header
 - **📱 Responsive Design**: Works perfectly on desktop and mobile
 - **🔧 Optimized Syntax Highlighting**: Carefully selected colors for better readability
@@ -438,7 +447,7 @@ The **cloudvBOX Dark Theme** is a professional dark theme developed specifically
 | Element         | Color Name  | Hex        |
 |-----------------|------------|------------|
 | Main Background | Dark Blue  | `#012837`  |
-| Accent Color    | Cyan       | `#55FCFF`  |
+| Accent Color    | Teal (accent-ink v2) | `#3FD1B9`  |
 | Primary Text    | White      | `#ffffff`  |
 | Secondary Text  | Light Gray | `#d1d5db`  |
 | Primary Buttons | Blue       | `#3b82f6`  |
@@ -568,7 +577,8 @@ You can customize the theme colors by editing the CSS file:
 ```css
 :root {
     /* Customize main color */
-    --cloudvbox-primary: #55FCFF;
+    --cloudvbox-primary: #3FD1B9;
+    --cloudvbox-primary-rgb: 63, 209, 185;
     
     /* Customize background */
     --cloudvbox-dark-bg: #012837;

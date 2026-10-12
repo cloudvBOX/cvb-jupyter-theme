@@ -5,8 +5,8 @@
 
 :root {
     /* Cores principais do cloudvBOX */
-    --cloudvbox-primary: #55FCFF;
-    --cloudvbox-primary-rgb: 85, 252, 255;
+    --cloudvbox-primary: #3FD1B9; /* accent-ink v2 (dark); light: #0E6E66 */
+    --cloudvbox-primary-rgb: 63, 209, 185;
     --cloudvbox-dark-bg: #012837;
     --cloudvbox-dark-bg-rgb: 1, 40, 55;
     
@@ -30,7 +30,7 @@
     /* Cores de borda */
     --cloudvbox-border-primary: #374151;
     --cloudvbox-border-secondary: #4b5563;
-    --cloudvbox-border-accent: rgba(85, 252, 255, 0.3);
+    --cloudvbox-border-accent: rgba(var(--cloudvbox-primary-rgb), 0.3);
     
     /* Sombras */
     --cloudvbox-shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
@@ -74,7 +74,7 @@
 }
 
 .cloudvbox-logo:hover {
-    filter: brightness(1.2) drop-shadow(0 0 8px rgba(85, 252, 255, 0.3));
+    filter: brightness(1.2) drop-shadow(0 0 8px rgba(var(--cloudvbox-primary-rgb), 0.3));
 }
 
 /* Botões estilo cloudvBOX */
@@ -120,8 +120,8 @@
 }
 
 .cloudvbox-btn-accent:hover {
-    background-color: rgba(85, 252, 255, 0.1);
-    box-shadow: 0 0 12px rgba(85, 252, 255, 0.3);
+    background-color: rgba(var(--cloudvbox-primary-rgb), 0.1);
+    box-shadow: 0 0 12px rgba(var(--cloudvbox-primary-rgb), 0.3);
 }
 
 /* Cards estilo cloudvBOX */
@@ -135,7 +135,7 @@
 }
 
 .cloudvbox-card:hover {
-    box-shadow: var(--cloudvbox-shadow-xl), 0 0 20px rgba(85, 252, 255, 0.1);
+    box-shadow: var(--cloudvbox-shadow-xl), 0 0 20px rgba(var(--cloudvbox-primary-rgb), 0.1);
     border-color: var(--cloudvbox-border-accent);
 }
 
@@ -154,7 +154,7 @@
 .cloudvbox-input:focus {
     outline: none;
     border-color: var(--cloudvbox-primary);
-    box-shadow: 0 0 0 3px rgba(85, 252, 255, 0.1);
+    box-shadow: 0 0 0 3px rgba(var(--cloudvbox-primary-rgb), 0.1);
 }
 
 .cloudvbox-input::placeholder {
@@ -184,7 +184,7 @@
 
 /* Seleção de texto */
 ::selection {
-    background-color: rgba(85, 252, 255, 0.3);
+    background-color: rgba(var(--cloudvbox-primary-rgb), 0.3);
     color: var(--cloudvbox-text-primary);
 }
 
